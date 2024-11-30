@@ -12,7 +12,7 @@ from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.node import Node
 
 from pymoveit2 import MoveIt2, MoveIt2State
-from pymoveit2.robots import panda as robot
+from pymoveit2.robots import ur16e as robot
 
 
 def main():
@@ -35,7 +35,6 @@ def main():
             -2.508581053909259,
             -2.412084037045761,
             0.5267181456160516,
-            1.3027041597804059,
         ],
     )
     node.declare_parameter("use_orientation_constraint", True)
